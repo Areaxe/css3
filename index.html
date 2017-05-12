@@ -4,12 +4,70 @@
 	<meta charset="UTF-8">
 	<title>css </title>
 	<link rel="stylesheet" href="./common.css">
+	<style>
+		h1{
+			font: 80px;
+			color: #999;
+			text-shadow: 0px 0px 1px #666;
+			text-align: center;
+			margin-bottom:150px;
+			margin-top: 100px;
+		}
+	.index-intry{
+		width: 600px;
+		height: 200px;
+		margin:150px auto;
+		text-align: center;
+	}
+
+		.index-intry a{
+			display: inline-block;
+			line-height: 120px;
+			text-decoration: none;
+			font-size:20px;
+			color: #999;
+			background: #aaa;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			box-sizing: border-box;
+			text-align: center;
+			margin-right:30px;
+			transition: transform .5s ease;
+			transform: rotateX(0deg);
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+			opacity: 0.8;
+		}
+		.index-intry a:hover{
+			transform: scale(1.5);
+			opacity: 1;
+			text-decoration: underline;
+		}
+		.index-intry a:nth-child(1){
+			background:#ff63ad;
+		}
+		.index-intry a:nth-child(2){
+			background:#50e3d9;
+		}
+		.index-intry a:nth-child(3){
+			background:#fad057;
+		}
+		.index-intry a:nth-child(4){
+			margin-right: 0;
+			background:#c5a4f5;
+		}
+	</style>
 </head>
 <body>
-	<a href="./device/device.html">device (this effect is not finish)</a>
-	<a href="./img_space/img_space.html">img_space</a>
-	<a href="./menu/index.html">device (this effect is not finish)</a>
-	<a href="./preserve/index.html">device (this effect is not finish)</a>
-	<a href="./rotate/index.html">device (this effect is not finish)</a>
+		<h1>CSS3</h1>
+	<!--<a href="./device/device.html">device (this effect is not finish)</a>-->
+	<div class="index-intry">
+		<a href="./img_space/img_space.html">img_space</a>
+		<a href="./menu/index.html">menu</a>
+		<a href="./preserve/index.html">preserve</a>
+		<a href="./rotate/index.html">rotate</a>
+	</div>
 </body>
 </html>
