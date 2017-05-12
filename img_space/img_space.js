@@ -3,6 +3,8 @@ let clickX = 0
 let clickY = 0
 let preserve = 2000
 let imgDatas = []
+let browserType = ["-moz-","-o-","-ms-","-webkit-"]
+
 window.onload = function(){
 	let sections = document.querySelectorAll('section')
 	imgNum = sections.length
@@ -35,7 +37,10 @@ window.onload = function(){
 // }
 
 function renderImg(imgElm,img){	//render one img
-	imgElm.style.cssText = "id:"+img.id+";left:"+img.left+"px;top:"+img.top+"px; transform:rotate("+img.rotateX+"deg) rotateY("+img.rotateY+"deg);animation-delay:"+img.delay+"s;"
+	imgElm.style.cssText = "id:"+img.id+";left:"+img.left+"px;top:"+img.top+"px;"
+	for(let i=0;i<browserType.length;i++){
+		imgElm.style.cssText = imgElm.style.cssText+browserType[i]+"transform:rotate("+img.rotateX+"deg) rotateY("+img.rotateY+"deg);animation-delay:"+img.delay+"s;"
+	}
 }
 
 function getRandomData(){
