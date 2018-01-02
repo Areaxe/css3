@@ -1,0 +1,125 @@
+body{
+  background-color: #000;
+  text-align: center;
+}
+.container{
+  width: 200px;
+		height: 200px;
+		margin: 150px auto;
+		position: relative;
+		transform: perspective(800px) rotateY(-60deg) rotateX(45deg);
+		transform-style: preserve-3d;
+    animation: rotate linear 10s infinite;
+}
+
+.area {
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  -webkit-box-shadow:0 0 150px #5fbcff;
+  opacity: .8;
+  background-size: 100% 100%; 
+}
+
+.face{
+  animation: faceAnimate ease-in-out 6s infinite;
+}
+.back{
+  animation: backAnimate ease-in-out 6s infinite;
+}
+.left{
+  animation: leftAnimate ease-in-out 6s infinite;
+}
+.right{
+  animation: rightAnimate ease-in-out 6s infinite;
+}
+
+.bottom{
+  animation: bottomAnimate ease-in-out 6s infinite;
+}
+.top{
+  animation: topAnimate ease-in-out 6s infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform: perspective(800px) rotateY(0deg) rotateX(360deg);
+  }
+  to{
+    transform: perspective(800px) rotateY(360deg) rotateX(0deg);
+  }
+}
+
+@keyframes faceAnimate{
+  0%{
+    transform:translateZ(150px);
+  }
+  33.33%{
+    transform:translateZ(100px);
+  }
+  100%{
+    transform:translateZ(150px);
+  }
+}
+
+@keyframes backAnimate{
+  0%{
+    transform:translateZ(-150px);
+  }
+  33.33%{
+    transform:translateZ(-100px);
+  }
+  100%{
+    transform:translateZ(-150px);
+  }
+}
+
+@keyframes leftAnimate{
+  0%{
+    transform:translateX(-150px) rotateY(90deg);
+  }
+  33.33%{
+    transform:translateX(-100px) rotateY(90deg);
+  }
+  100%{
+    transform:translateX(-150px) rotateY(90deg);
+  }
+}
+
+@keyframes rightAnimate{
+  0%{
+    transform:translateX(150px) rotateY(90deg);
+  }
+  33.33%{
+    transform:translateX(100px) rotateY(90deg);
+  }
+  100%{
+    transform:translateX(150px) rotateY(90deg);
+  }
+}
+
+@keyframes topAnimate{
+  0%{
+    transform:translateY(-150px) rotateX(90deg);
+  }
+  33.33%{
+    transform:translateY(-100px) rotateX(90deg);
+  }
+  100%{
+    transform:translateY(-150px) rotateX(90deg);
+  }
+}
+
+@keyframes bottomAnimate{
+  0%{
+    transform:translateY(150px) rotateX(90deg);
+  }
+  33.33%{
+    transform:translateY(100px) rotateX(90deg);
+  }
+  100%{
+    transform:translateY(150px) rotateX(90deg);
+  }
+}

@@ -1,77 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>css </title>
-	<link rel="stylesheet" href="./common.css">
-	<style>
-		h1{
-			font: 80px;
-			color: #999;
-			text-shadow: 0px 0px 1px #666;
-			text-align: center;
-			margin-bottom:150px;
-			margin-top: 100px;
-		}
-	.index-intry{
-		width: 600px;
-		height: 200px;
-		margin:150px auto;
-		text-align: center;
-	}
-
-		.index-intry a{
-			display: inline-block;
-			line-height: 120px;
-			text-decoration: none;
-			font-size:20px;
-			background: #aaa;
-			border-radius: 50%;
-			width: 120px;
-			height: 120px;
-			box-sizing: border-box;
-			text-align: center;
-			margin-right:30px;
-			transition: transform .5s ease;
-			transform: rotateX(0deg);
-			color: #fff;
-			text-transform: uppercase;
-			font-weight: bold;
-			opacity: 0.8;
-		}
-		.index-intry a:hover{
-			transform: scale(1.2);
-			opacity: 1;
-			text-decoration: underline;
-		}
-		.index-intry a:nth-child(1){
-			background:#ff63ad;
-		}
-		.index-intry a:nth-child(2){
-			background:#50e3d9;
-		}
-		.index-intry a:nth-child(3){
-			background:#fad057;
-		}
-		.index-intry a:nth-child(4){
-			margin-right: 0;
-			background:#c5a4f5;
-		}
-		.index-intry a:nth-child(5){
-			margin-right: 0;
-			background:#aaa;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>旋转的六面体</title>
 </head>
+
 <body>
-		<h1>CSS3</h1>
-	<!--<a href="./device/device.html">device (this effect is not finish)</a>-->
-	<div class="index-intry">
-		<a href="./img_space/img_space.html">img_space</a>
-		<a href="./loading/loading.html">loading</a>
-		<a href="./menu/index.html">menu</a>
-		<a href="./preserve/index.html">preserve</a>
-		<a href="./rotate/index.html">rotate</a>
-	</div>
+  <div class="container">
+    <div class="area face"></div>
+    <div class="area back"></div>
+    <div class="area left"></div>
+    <div class="area right"></div>
+    <div class="area top"></div>
+    <div class="area bottom"></div>
+  </div>
+  <div>
+  </div>
+  <script>
+  </script>
 </body>
 </html>
