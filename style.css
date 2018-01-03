@@ -4,12 +4,12 @@ body{
 }
 .container{
   width: 200px;
-		height: 200px;
-		margin: 150px auto;
-		position: relative;
-		transform: perspective(800px) rotateY(-60deg) rotateX(45deg);
-		transform-style: preserve-3d;
-    animation: rotate linear 10s infinite;
+  height: 200px;
+  margin: 150px auto;
+  position: relative;
+  transform: perspective(800px) rotateY(-60deg) rotateX(45deg);
+  transform-style: preserve-3d;
+  animation: rotate linear 10s infinite;
 }
 
 .area {
@@ -18,7 +18,7 @@ body{
   position: absolute;
   top:0;
   left: 0;
-  -webkit-box-shadow:0 0 150px #5fbcff;
+  box-shadow:0 0 150px #5fbcff;
   opacity: .8;
   background-size: 100% 100%; 
 }
